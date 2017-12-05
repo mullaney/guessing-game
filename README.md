@@ -5,3 +5,9 @@ Starter template for a front end only app using babel and webpack to build the j
 * ./build/bundle.js is the JavaScript output.
 * Use 'npm run build' to build app.
 * Use 'npm start' to startup the dev server
+
+Only add the following to the live server:
+* index.html
+* build/
+* css/
+* img/

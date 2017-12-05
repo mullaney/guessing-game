@@ -1,4 +1,4 @@
-import { myObject, myFunction } from './module';
+// import { myObject, myFunction } from './module';
 //
 // console.log(person.name);
 //
