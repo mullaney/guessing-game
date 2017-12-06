@@ -3,12 +3,13 @@
 
 body {
   font-family: 'Muli', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h1 {
-  font-family: 'Philosopher', sans-serif;
-  font-size: 2.4em;
+  font-family: 'Ranchers', sans-serif;
+  font-size: 3em;
+  font-weight: 400;
 }
 
 h2 {
@@ -32,7 +33,7 @@ div#background-image {
 }
 
 
-div#container {
+div#main {
   z-index: 99;
   position: fixed;
   left: 0;
@@ -51,13 +52,15 @@ ul {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  max-width: 90%;
+  margin: 10px auto;
 }
 
 li {
   border: 1px solid black;
   display: inline-block;
-  width: 100%;
   margin: 5px;
+  width: 100%;
   height: 70px;
   line-height: 70px;
   vertical-align: middle;
@@ -66,12 +69,8 @@ li {
   background-color: white;
 }
 
-#guess-input, #guess-button {
-  /*top: 0;
-  left: 0;*/
-}
 
-#guess-input {
+#player-input {
   position: relative;
   margin: auto;
   height: 120px;
@@ -83,11 +82,10 @@ li {
   z-index: 1;
 }
 
-#guess-button {
+#submit {
   position: absolute;
-  bottom: 152px;
-  left: calc(50% + 32px);
-  /*138px;*/
+  bottom: 138px;
+  left: calc(50% + 30px);
   z-index: 100;
   height: 70px;
   width: 70px;
@@ -103,19 +101,8 @@ button {
 
 }
 
-footer#footer {
-  z-index: 199;
-  width: 100%;
-  margin: 0;
-  background-color: white;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 15px;
-  text-align: center;
-  font-size: 0.6em;
-  box-shadow: -3px 0 8px #888888;
+#footer {
+  display: none;
 }
 
 img.float-left, img.float-right {
@@ -129,25 +116,43 @@ img.float-left, img.float-right {
   margin: 10px auto;
 }
 
-@media only screen and (min-width: 600px) {
-    h1 {
-      font-size: 2.8em;
-    }
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (min-width: 750px) {
 
-    img.float-left, img.float-right {
-      width: 180px;
-      display: block;
-      text-align: center;
-      margin: 0 auto;
-    }
+  img.float-left, img.float-right {
+    width: 180px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    img.float-left {
-      display: inline;
-      float: left;
-    }
+  img.float-left {
+    display: inline;
+    float: left;
+  }
 
-    img.float-right {
-      display: inline;
-      float: right;
-    }
+  img.float-right {
+    display: inline;
+    float: right;
+  }
+
+  #footer {
+    display: block;
+    z-index: 199;
+    width: calc(100% - 30px);
+    margin: 0;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.6em;
+    box-shadow: -3px 0 8px #888888;
+  }
 }
