@@ -43,7 +43,7 @@ div#main {
   text-align: center;
 }
 
-input:focus {
+:focus {
   outline: none;
 }
 
@@ -90,6 +90,9 @@ li {
   height: 70px;
   width: 70px;
   border-radius: 100%;
+  background: #50ab44;
+  color: white;
+  border-color: #50ab44;
 }
 
 button {
@@ -98,7 +101,18 @@ button {
   border-radius: 6px;
   background-color: whitesmoke;
   box-shadow: 2px 2px 3px #888888;
+}
 
+#new-game {
+  background: #50ab44;
+  color: white;
+  border-color: #50ab44;
+}
+
+#hint {
+  background: #199eb1;
+  color: white;
+  border-color: #199eb1;
 }
 
 #footer {
